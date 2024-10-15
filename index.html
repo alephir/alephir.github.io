@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://alephir.github.io/unmined.index.html">
-    <title>Перенаправление...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="7; url=https://alephir.github.io/unmined.index.html">
+    <title>Новости QMuh</title>
+    <style>
+        /* Center the text and content */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Scrollable container for the Telegram posts */
+        .post-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .post-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .post-container::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 4px;
+        }
+
+        .post-container::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        /* Adjust iframe sizing */
+        iframe, .telegram-post {
+            min-width: 300px;
+            max-width: 400px;
+            height: 500px;
+            flex-shrink: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p>Если вы не были автоматически перенаправлены, перейдите по <a href="https://alephir.github.io/unmined.index.html">ссылке на unmined.index.html</a>.</p>
+    <h1>Новости сервера Minecraft</h1>
+    <p>Вы будете перенаправлены через несколько секунд. Если это не произошло автоматически, перейдите по <a href="https://alephir.github.io/unmined.index.html">этой ссылке</a>.</p>
+
+    <p>Пока вы ждете, ознакомьтесь с последними постами на нашем канале Telegram!</p>
+
+    <!-- Scrollable container for Telegram posts -->
+    <div class="post-container">
+        <!-- Embed Telegram Post #77 -->
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="qqqmuh/88" data-width="100%"></script>
+
+        <!-- Embed Telegram Post #84 -->
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="qqqmuh/84" data-width="100%"></script>
+
+        <!-- Embed Telegram Post #88 -->
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="qqqmuh/77" data-width="100%"></script>
+    </div>
+
+    <p>Вы будете перенаправлены на основную страницу через несколько секунд.</p>
 </body>
 </html>
